@@ -1,34 +1,370 @@
-Rewrite the following source article into a fresh, fully unique long-form blog post of at least 2,500 words for AI search visibility, AEO, SEO, and India-wide or geo-targeted relevance.
+# Legal Suvidha Production Rewrite Prompt
 
-Title: {{TITLE}}
-Geo scope: {{GEO_SCOPE}} (NATIONAL, LOCAL, or HYBRID)
-Primary location/geo target: {{LOCATION}}
-Primary keywords: {{TARGET_KEYWORDS}}
-Secondary keywords / related search terms: {{RELATED_TERMS}}
-Search intent: {{SEARCH_INTENT}}
-Primary internal links to include naturally: {{PRIMARY_INTERNAL_LINKS}}
-Supporting internal links to include naturally: {{SUPPORTING_INTERNAL_LINKS}}
-CTA target: {{CTA_LINK_TARGET}}
-Source content: {{ORIGINAL_CONTENT}}
+Use this prompt for every remaining article in the GitHub repository.
 
-Instructions:
-1. Write a new 2,500+ word article in clear, professional English.
-2. Output plain text only. Do not output HTML tags.
-3. Use clear text headings and subheadings, such as H1:, H2:, and H3:, so the developer can map them into WordPress formatting.
-4. Make the article India-first when GEO_SCOPE is NATIONAL. Use city/local references only when GEO_SCOPE is LOCAL or HYBRID.
-5. Update old year references to 2026 where appropriate, and refresh dated framing so the content does not read like an old article.
-6. For time-sensitive legal, tax, regulatory, fee, due-date, or scheme content, use cautious current-year wording and avoid claiming a temporary scheme is live unless verified.
-7. Include an answer-first opening summary in the first 80 words.
-8. Include AEO-friendly answer boxes as plain text labels, for example: Answer Box: ...
-9. Include decision tables or checklists in plain text format where useful.
-10. Include risk, penalty, consequence, applicability, documents, and next-step sections where relevant.
-11. Include 6-8 FAQs with practical answers.
-12. Include natural internal-link anchor text from the provided internal link fields. Do not use raw URLs unless supplied.
-13. Include one clear CTA aligned with the search intent.
-14. Do not copy phrases verbatim from the original source. Rewrite for readability, authority, and search visibility.
-15. At the end, provide exactly these fields:
-SEO_TITLE: ...
-META_DESCRIPTION: ...
-INTERNAL_LINK_ANCHORS: anchor 1 | anchor 2 | anchor 3
+Repository: https://github.com/camayank/lsp-content-update
 
-Output only the new text article and the requested SEO fields. No analysis, no commentary, no process notes.
+## Files To Use
+
+Primary working file:
+- `master_rewrite_workbook.csv`
+
+Optional spreadsheet version:
+- `master_rewrite_workbook.xlsx`
+
+Team assignment file:
+- `team_rewrite_assignments.csv`
+
+Developer import output file:
+- `developer_blog_update_text_only.csv`
+
+Rows that still fail the 2,500-word rule should remain out of the developer import file and be listed in:
+- `developer_blog_update_needs_expansion.csv`
+
+Do not use old batch fragment files. The master workbook is the source of truth.
+
+## Columns To Read From `master_rewrite_workbook.csv`
+
+Actual source/reference columns available in `master_rewrite_workbook.csv`:
+
+- `title`
+- `words`
+- `date`
+- `year`
+- `categories`
+- `seo_score`
+- `focus_keyword`
+- `url`
+- `slug`
+- `orig_url`
+- `blog_url`
+- `orig_status`
+- `orig_final_url`
+- `blog_status`
+- `blog_final_url`
+- `checked`
+- `TITLE`
+- `GEO_SCOPE`
+- `LOCATION`
+- `TARGET_KEYWORDS`
+- `RELATED_TERMS`
+- `SEARCH_INTENT`
+- `PRIMARY_INTERNAL_LINKS`
+- `SUPPORTING_INTERNAL_LINKS`
+- `CTA_LINK_TARGET`
+- `ORIGINAL_CONTENT`
+- `SOURCE_URL`
+- `CATEGORY`
+- `WORD_COUNT`
+- `NOTES`
+- `SOURCE_BATCH`
+
+If both `title` and `TITLE` exist, use `TITLE` as the preferred working title and `title` as the original/reference title.
+
+Important: `master_rewrite_workbook.csv` does not currently contain a WordPress post ID column for all 548 rows. Use `slug` as the stable matching key. Do not invent a `Post id`.
+
+## Columns To Write Back Into `master_rewrite_workbook.csv`
+
+After rewriting, update these columns:
+
+- `REWRITE_TEXT`
+- `SEO_TITLE`
+- `META_DESCRIPTION`
+- `INTERNAL_LINK_ANCHORS`
+- `STATUS`
+- `NOTES`, only if there are important editorial or compliance concerns
+
+Set:
+- `STATUS = REVIEW`
+
+Do not write new work into:
+- `REWRITE_HTML`
+- `REWRITE_DRAFT`
+
+`REWRITE_HTML` is legacy backup only.
+`REWRITE_DRAFT` is legacy/older workflow backup only.
+
+## Developer Export Format
+
+When a row is complete and has at least 2,500 words in `REWRITE_TEXT`, export it to `developer_blog_update_text_only.csv` using exactly these four headers:
+
+```text
+Post id,Slug,Title,Content
+```
+
+Map fields as follows:
+
+- `Post id` = WordPress post ID only if available from an existing WordPress export or existing mapped developer file
+- `Slug` = `slug`
+- `Title` = improved final article title
+- `Content` = `REWRITE_TEXT`
+
+If `Post id` is not available for a row, do not guess. Keep the row matched by `Slug` and ask the developer to map the WordPress ID by slug during import.
+
+If a row is below 2,500 words, do not include it in `developer_blog_update_text_only.csv`.
+
+## Prompt Inputs
+
+Post ID: {{POST_ID}}
+Slug: {{slug}}
+Original Title: {{title}}
+Working Title: {{TITLE}}
+Geo Scope: {{GEO_SCOPE}}
+Primary Location / Geo Target: {{LOCATION}}
+Primary Keywords: {{TARGET_KEYWORDS}}
+Secondary Keywords / Related Terms: {{RELATED_TERMS}}
+Search Intent: {{SEARCH_INTENT}}
+Primary Internal Links / Anchor Texts: {{PRIMARY_INTERNAL_LINKS}}
+Supporting Internal Links / Anchor Texts: {{SUPPORTING_INTERNAL_LINKS}}
+CTA Target: {{CTA_LINK_TARGET}}
+Category: {{CATEGORY}}
+Current Word Count: {{WORD_COUNT}}
+Source URL: {{SOURCE_URL}}
+Original Content: {{ORIGINAL_CONTENT}}
+
+## Task
+
+Rewrite the source article into a fresh, fully unique, long-form Legal Suvidha blog post.
+
+The final article must be:
+
+- at least 2,500 words
+- plain text only
+- engaging and practical
+- AEO optimized
+- SEO optimized
+- India-first or geo-appropriate
+- AI-search-visibility ready
+- suitable for direct use in the `Content` column of the developer import file
+
+## Output Rules
+
+Output plain text only.
+
+Do not output HTML.
+
+Do not include markdown code fences.
+
+Use clear heading labels:
+
+```text
+H1:
+H2:
+H3:
+```
+
+Do not include commentary, analysis, or process notes.
+
+## Required Article Structure
+
+Use this structure unless the topic clearly requires a better order:
+
+H1: Improved search-intent title
+
+Opening direct answer in the first 80 words
+
+Answer Box:
+
+H2: What this topic means
+
+H2: Why this matters in 2026
+
+H2: Who this applies to
+
+H2: Applicability, eligibility, or checklist
+
+H2: Step-by-step process
+
+H2: Documents or details required
+
+H2: Risk, penalty, or consequences
+
+H2: Common mistakes to avoid
+
+H2: India-wide relevance or local relevance
+
+H2: Practical next steps
+
+H2: Frequently Asked Questions
+
+H2: Conclusion
+
+SEO_TITLE:
+
+META_DESCRIPTION:
+
+INTERNAL_LINK_ANCHORS:
+
+## Content Requirements
+
+1. Write at least 2,500 words.
+
+2. Do not copy phrases verbatim from `ORIGINAL_CONTENT`.
+
+3. Improve the article title for search intent. Do not blindly reuse the old title.
+
+4. Start with a direct answer in the first 80 words.
+
+5. Include an `Answer Box:` near the top.
+
+6. Use short answer labels where useful:
+
+- `Answer:`
+- `Quick takeaway:`
+- `Practical takeaway:`
+
+7. Include checklists, numbered steps, or plain-text decision tables where useful.
+
+8. Include a risk, penalty, consequence, or delay-cost section where relevant.
+
+9. Include 6 to 8 FAQs with practical answers.
+
+10. Include one clear CTA aligned with `CTA_LINK_TARGET`.
+
+11. The article must be useful enough for a founder, director, partner, startup, or business owner to act on.
+
+## 2026 Update Rules
+
+If the original article mentions old years such as 2021, 2022, 2023, 2024, or 2025:
+
+- update the framing to 2026 where appropriate
+- remove stale one-time scheme language unless still verified
+- keep historical references only if clearly marked as historical context
+- do not preserve outdated deadline or relief language as if it is current
+
+For legal, tax, GST, MCA, ROC, trademark, FSSAI, penalty, due-date, fee, or scheme content:
+
+- use cautious current-year wording
+- verify from official sources where possible
+- do not claim a temporary scheme, extension, waiver, or amnesty is currently active unless verified
+- if exact due dates or penalties may change, say `usually`, `generally`, `as applicable for the relevant year`, or `verify the current official position before filing`
+
+## GEO Rules
+
+If `GEO_SCOPE = NATIONAL`:
+
+- use India-wide language
+- examples: `businesses in India`, `Indian startups`, `companies and LLPs across India`
+- do not force city names unnaturally
+
+If `GEO_SCOPE = LOCAL`:
+
+- use the location naturally in the H1, opening, at least one H2, examples, FAQ, and conclusion
+
+If `GEO_SCOPE = HYBRID`:
+
+- keep the article India-wide
+- include practical examples from major business hubs only where useful
+
+## SEO Rules
+
+Use `TARGET_KEYWORDS` naturally in:
+
+- H1
+- first paragraph
+- at least one H2
+- conclusion
+
+Use `RELATED_TERMS` naturally throughout the article.
+
+Avoid keyword stuffing.
+
+Match the article to `SEARCH_INTENT`:
+
+- informational: explain clearly and educate deeply
+- transactional: include process, documents, cost/risk signals, and CTA
+- compliance guide: include forms, deadlines, penalties, checklist, and next steps
+- local service: include geo relevance and service CTA
+- comparison: include decision tables, pros/cons, and recommendation logic
+- penalty/recovery: include urgency, consequences, and regularisation steps
+
+## AEO And AI Search Visibility Rules
+
+Make the article easy for AI systems and answer engines to extract by including:
+
+- direct answers
+- concise definitions
+- step-by-step sections
+- checklists
+- decision tables in plain text
+- practical examples
+- risk/consequence summaries
+- FAQs
+- clear next steps
+
+The article should clearly answer:
+
+- what the topic means
+- who it applies to
+- when action is required
+- what documents or details are needed
+- what risks, penalties, or consequences apply
+- what the reader should do next
+
+## Internal Linking Rules
+
+Use these fields from the row:
+
+- `PRIMARY_INTERNAL_LINKS`
+- `SUPPORTING_INTERNAL_LINKS`
+- `CTA_LINK_TARGET`
+
+Include 3 to 6 natural internal-link anchor mentions in the article.
+
+Do not use raw URLs unless URLs are supplied.
+
+Do not write `click here`.
+
+Internal links should answer the reader’s next logical question.
+
+## CTA Rules
+
+Use one clear CTA only.
+
+Match CTA to intent:
+
+- comparison page: book a structure-selection call
+- penalty/recovery page: get urgent compliance support
+- checklist/applicability page: get checklist plus expert review
+- registration/service page: get filing support
+- general compliance guide: get compliance review
+
+Do not over-sell. Keep the CTA practical and trust-building.
+
+## Final QA Before Marking `STATUS = REVIEW`
+
+Confirm:
+
+- `REWRITE_TEXT` has at least 2,500 words
+- no HTML tags are present
+- no copied source phrasing
+- 2026 framing is applied where needed
+- old years are updated or contextualized
+- temporary schemes are not presented as live unless verified
+- primary and secondary keywords are used naturally
+- answer box is included
+- checklist/table is included where useful
+- risk/consequence section is included
+- 6 to 8 FAQs are included
+- internal links are included naturally
+- CTA is included
+- `SEO_TITLE` is filled
+- `META_DESCRIPTION` is filled
+- `INTERNAL_LINK_ANCHORS` is filled
+- `STATUS` is set to `REVIEW`
+
+## Final Output To Save In The Workbook
+
+Save the full article into:
+
+- `REWRITE_TEXT`
+
+Save the SEO fields into:
+
+- `SEO_TITLE`
+- `META_DESCRIPTION`
+- `INTERNAL_LINK_ANCHORS`
+
+Set:
+
+- `STATUS = REVIEW`

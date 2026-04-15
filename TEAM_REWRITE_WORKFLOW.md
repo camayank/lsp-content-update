@@ -2,6 +2,88 @@
 
 This file is the shared operating guide for rewriting the Legal Suvidha blog queue with consistent quality, AEO, SEO, India-wide relevance, and internal linking.
 
+
+
+## Exact File And Column References
+
+Primary source file for all team members:
+
+- `master_rewrite_workbook.csv`
+
+Optional spreadsheet version:
+
+- `master_rewrite_workbook.xlsx`
+
+Assignment tracker:
+
+- `team_rewrite_assignments.csv`
+
+Prompt file:
+
+- `rewrite_prompt_production.txt`
+
+Developer import file:
+
+- `developer_blog_update_text_only.csv`
+
+Rows below 2,500 words must stay out of the developer import file and should be tracked in:
+
+- `developer_blog_update_needs_expansion.csv`
+
+Actual source/reference columns available in `master_rewrite_workbook.csv`:
+
+- `title`
+- `words`
+- `date`
+- `year`
+- `categories`
+- `seo_score`
+- `focus_keyword`
+- `url`
+- `slug`
+- `orig_url`
+- `blog_url`
+- `orig_status`
+- `orig_final_url`
+- `blog_status`
+- `blog_final_url`
+- `checked`
+- `TITLE`
+- `GEO_SCOPE`
+- `LOCATION`
+- `TARGET_KEYWORDS`
+- `RELATED_TERMS`
+- `SEARCH_INTENT`
+- `PRIMARY_INTERNAL_LINKS`
+- `SUPPORTING_INTERNAL_LINKS`
+- `CTA_LINK_TARGET`
+- `ORIGINAL_CONTENT`
+- `SOURCE_URL`
+- `CATEGORY`
+- `WORD_COUNT`
+- `NOTES`
+- `SOURCE_BATCH`
+
+Important: `master_rewrite_workbook.csv` does not currently contain WordPress post IDs for all 548 rows. Use `slug` as the stable matching key. Do not invent a `Post id`.
+
+Write these output columns in `master_rewrite_workbook.csv`:
+
+- `REWRITE_TEXT`
+- `SEO_TITLE`
+- `META_DESCRIPTION`
+- `INTERNAL_LINK_ANCHORS`
+- `STATUS`
+- `NOTES`, only for important concerns
+
+Developer import mapping:
+
+- `Post id` = mapped WordPress post ID only when available from an existing WordPress export or developer mapping
+- `Slug` = `slug`
+- `Title` = improved final title
+- `Content` = `REWRITE_TEXT`
+
+If `Post id` is unavailable, keep the row matched by `Slug` and ask the developer to map the WordPress ID by slug during import.
+
 ## Source Of Truth
 
 Use only:
@@ -129,4 +211,3 @@ Before marking a row as `REVIEW`, confirm:
 - Internal links are relevant.
 - The page has a distinct search intent.
 - SEO title and meta description are filled.
-
