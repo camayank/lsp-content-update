@@ -13,3 +13,22 @@ retry_seq*.log
 
 # Keep source CSV/workbook files intentional.
 # Do not ignore master_rewrite_workbook.csv because it is the main text workflow source.
+
+# Audit/intermediate files kept locally but not tracked in git
+CONTENT_AUDIT_PLAN.md
+LIVE_BACKUP_VERIFIED_INVENTORY.md
+below_1000_live_status.csv
+below_1000_words_blogs.csv
+below_1000_words_blogs.md
+below_1000_words_blogs_live_check*.csv
+master_weak_content_audit.csv
+master_weak_content_audit.md
+retry_failed_blog_checks*.py
+verify_weak_blogs_live.py
+retry_seq*.log
+
+# Batch fragments are replaced by master_rewrite_workbook.*
+rewrite_queue_*.csv
+rewrite_queue_*_notes.md
+rewrite_queue_batch_manifest.md
+rewrite_queue_template.csv
