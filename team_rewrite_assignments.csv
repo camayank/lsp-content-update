@@ -1,0 +1,56 @@
+BATCH_ID,ROW_START,ROW_END,OWNER,STATUS,ROWS_TOTAL,ROWS_REVIEW,ROWS_READY_FOR_REWRITE,FIRST_TITLE,LAST_TITLE,QUALITY_NOTES
+BATCH-001,1,10,,REVIEW,10,10,0,Annual Compliances of LLP,How to take advantage of the amnesty for GST registration,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-002,11,20,,IN_PROGRESS,10,3,7,Simple Guide On Trademark Filing Process,"Private Limited Company Compliances in India: Benefits, Requirements, and Consequences",Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-003,21,30,,UNASSIGNED,10,0,10,Annual Compliances of LLP,GST Refunds guidelines,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-004,31,40,,UNASSIGNED,10,0,10,Import Export Code,E-Registering a Trademark in India: Step-by-step Guide and Fees,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-005,41,50,,UNASSIGNED,10,0,10,Trademark Registration Online: Steps and Requirements,Reduction in fees for Annual returns,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-006,51,60,,UNASSIGNED,10,0,10,Restriction to avail ITC under CGST,Form DPT-3,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-007,61,70,,UNASSIGNED,10,0,10,ITC can't avail on Same Invoice,Changes in Table 4 of GSTR-3B,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-008,71,80,,UNASSIGNED,10,0,10,Customs Duty on imported goods,Margin Scheme under GST,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-009,81,90,,UNASSIGNED,10,0,10,Filing of LUT on GST Portal,GST on Export Freight,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-010,91,100,,UNASSIGNED,10,0,10,GSTR-1 and GSTR-3B,ROC Compliance List & deadlines,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-011,101,110,,UNASSIGNED,10,0,10,DPT-3 e-Form: Due Date,GST on Carbonated Cold Drinks,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-012,111,120,,UNASSIGNED,10,0,10,GST on Khadi Products,Outcomes of late GSTR-1 filing,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-013,121,130,,UNASSIGNED,10,0,10,"Discrepancies Among GSTR 2A, GSTR 2B, GSTR 8A",GST Consumer Empowerment Scheme,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-014,131,140,,UNASSIGNED,10,0,10,GST on Sporting Goods & Toys,GST: Key Concerns for Taxpayers,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-015,141,150,,UNASSIGNED,10,0,10,Small business GST compliance tips,Private Limited Companies in India: Successful Examples,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-016,151,160,,UNASSIGNED,10,0,10,Best Practices for Choosing Pvt Ltd Company Names,Annual Return Filing for Private Limited Companies,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-017,161,170,,UNASSIGNED,10,0,10,ROC Filings Explained: A Month-by-Month Compliance Calendar,TDS on interest in PF Contributions,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-018,171,180,,UNASSIGNED,10,0,10,TDS under section 194R,UAN Activation: A Quick Guide,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-019,181,190,,UNASSIGNED,10,0,10,Incorporating Your Business:Big Benefits,Pradhan Mantri Mudra Yojana: Benefits and Application,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-020,191,200,,UNASSIGNED,10,0,10,Working Capital Financing: Types and Benefits,Preparing for Seed to Series A: Legal & Compliance Readiness Guide,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-021,201,210,,UNASSIGNED,10,0,10,Data Privacy Laws in India 2025: What Startups Must Do,ALTERNATIVE MINIMUM TAX,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-022,211,220,,UNASSIGNED,10,0,10,Presumptive Taxation Scheme,Disclosure of Related Party Transaction,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-023,221,230,,UNASSIGNED,10,0,10,Guidance note to Auditors,JSON Scheme for Form ITR-7,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-024,231,240,,UNASSIGNED,10,0,10,Employee Stock Option Plan (ESOP),Income Tax Advance Ruling,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-025,241,250,,UNASSIGNED,10,0,10,Taxation on Gratuity,Compliance Calendar,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-026,251,260,,UNASSIGNED,10,0,10,Atal Pension Yojana,Amendments of Section 44AB,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-027,261,270,,UNASSIGNED,10,0,10,Amendment in Registration of charges,Credit Guarantee for Startups,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-028,271,280,,UNASSIGNED,10,0,10,Export Market Promotion Scheme,Section 194N under IT Act,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-029,281,290,,UNASSIGNED,10,0,10,Common ITR Form issued by CBDT,Start Mobile Payments solutions,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-030,291,300,,UNASSIGNED,10,0,10,How to start Edtech business in India,UPGRADATION OF E-FORMS IN V3 PORTAL,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-031,301,310,,UNASSIGNED,10,0,10,ANNUAL INFORMATION SYSTEM,Want to save for your child's education? Learn how to claim tax deductions on Equity-linked Savings Scheme,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-032,311,320,,UNASSIGNED,10,0,10,Want to save for the future? Learn how to claim tax deductions on your National Savings Monthly Income Scheme,AMENDMENT IN SECTION 44AD & 44ADA,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-033,321,330,,UNASSIGNED,10,0,10,FORM INC 20A,Circular on TDS for salaries: FY 2023-2024,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-034,331,340,,UNASSIGNED,10,0,10,How to apply for FCRA License,Changes to Plans Under RERA,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-035,341,350,,UNASSIGNED,10,0,10,Income Tax Sec 80GG for Old Tax Regime FY 2023-24,Tips for Tax-Efficient Salary Structure,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-036,351,360,,UNASSIGNED,10,0,10,Section 194DA,HRA Exemption Calculation,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-037,361,370,,UNASSIGNED,10,0,10,Scaling Your Startup,Education: Compliance Made Easy,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-038,371,380,,UNASSIGNED,10,0,10,Construction Compliance Solutions,ITR Filing Deadline,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-039,381,390,,UNASSIGNED,10,0,10,Claim HRA Exemption in ITR,Starting an Indian Startup,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-040,391,400,,UNASSIGNED,10,0,10,Everything regarding Advance Tax,Understanding the updated ITR,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-041,401,410,,UNASSIGNED,10,0,10,Essential IT Notice for Salaried Individuals,Income Tax Login made easy: Tips,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-042,411,420,,UNASSIGNED,10,0,10,Taxable Life Insurance Policy Bonuses,Income Tax SMS Alert,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-043,421,430,,UNASSIGNED,10,0,10,Deductions under chapter VI-A,Annual AOC-4 Filing,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-044,431,440,,UNASSIGNED,10,0,10,NRI reduce Indian income TDS: How?,Form 71 Fixes TDS Mismatch,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-045,441,450,,UNASSIGNED,10,0,10,Income Tax Errors and Fixes,Tax Advantages for Startups,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-046,451,460,,UNASSIGNED,10,0,10,Tax Refund Delays & Solutions,ISO 9001: Quality Management Systems,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-047,461,470,,UNASSIGNED,10,0,10,Understanding ISO Registration for Businesses,Equipment Financing: How It Works for SMEs in India,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-048,471,480,,UNASSIGNED,10,0,10,Venture Capital Basics: What Startups Need to Know,Government-Backed Startup Schemes: A Complete List,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-049,481,490,,UNASSIGNED,10,0,10,How to Create a Winning Pitch Deck for Investors,Crowdfunding for SMEs: Platforms to Explore,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-050,491,500,,UNASSIGNED,10,0,10,Trade Credit: An Overlooked Financing Option for Indian Businesses,Assessing the Stage of Growth for Your Startup,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-051,501,510,,UNASSIGNED,10,0,10,Establishing a Robust Complaint Redressal Mechanism,How to Secure Funding in the First Year of Your Startup,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-052,511,520,,UNASSIGNED,10,0,10,How to Create a Winning Business Model for Your Startup,How to Build Momentum in Your Startup’s First 90 Days,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-053,521,530,,UNASSIGNED,10,0,10,How to Make Your Startup Customer-Centric from Day One,How to Master Time Management as a Startup Founder,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-054,531,540,,UNASSIGNED,10,0,10,Why MOA & AOA Matter: Real Cases of Founders Losing Control,How to Structure Your Founder Salary to Save Maximum Tax,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.
+BATCH-055,541,548,,UNASSIGNED,8,0,8,Startup Valuation Methods VCs Actually Use (With Examples),ChatGPT & Your Startup: Legal Risks and Best Practices,Use TEAM_REWRITE_WORKFLOW.md and rewrite_prompt_production.txt. Fill REWRITE_TEXT only.

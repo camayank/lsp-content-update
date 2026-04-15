@@ -1,0 +1,34 @@
+Rewrite the following source article into a fresh, fully unique long-form blog post of at least 2,500 words for AI search visibility, AEO, SEO, and India-wide or geo-targeted relevance.
+
+Title: {{TITLE}}
+Geo scope: {{GEO_SCOPE}} (NATIONAL, LOCAL, or HYBRID)
+Primary location/geo target: {{LOCATION}}
+Primary keywords: {{TARGET_KEYWORDS}}
+Secondary keywords / related search terms: {{RELATED_TERMS}}
+Search intent: {{SEARCH_INTENT}}
+Primary internal links to include naturally: {{PRIMARY_INTERNAL_LINKS}}
+Supporting internal links to include naturally: {{SUPPORTING_INTERNAL_LINKS}}
+CTA target: {{CTA_LINK_TARGET}}
+Source content: {{ORIGINAL_CONTENT}}
+
+Instructions:
+1. Write a new 2,500+ word article in clear, professional English.
+2. Output plain text only. Do not output HTML tags.
+3. Use clear text headings and subheadings, such as H1:, H2:, and H3:, so the developer can map them into WordPress formatting.
+4. Make the article India-first when GEO_SCOPE is NATIONAL. Use city/local references only when GEO_SCOPE is LOCAL or HYBRID.
+5. Update old year references to 2026 where appropriate, and refresh dated framing so the content does not read like an old article.
+6. For time-sensitive legal, tax, regulatory, fee, due-date, or scheme content, use cautious current-year wording and avoid claiming a temporary scheme is live unless verified.
+7. Include an answer-first opening summary in the first 80 words.
+8. Include AEO-friendly answer boxes as plain text labels, for example: Answer Box: ...
+9. Include decision tables or checklists in plain text format where useful.
+10. Include risk, penalty, consequence, applicability, documents, and next-step sections where relevant.
+11. Include 6-8 FAQs with practical answers.
+12. Include natural internal-link anchor text from the provided internal link fields. Do not use raw URLs unless supplied.
+13. Include one clear CTA aligned with the search intent.
+14. Do not copy phrases verbatim from the original source. Rewrite for readability, authority, and search visibility.
+15. At the end, provide exactly these fields:
+SEO_TITLE: ...
+META_DESCRIPTION: ...
+INTERNAL_LINK_ANCHORS: anchor 1 | anchor 2 | anchor 3
+
+Output only the new text article and the requested SEO fields. No analysis, no commentary, no process notes.

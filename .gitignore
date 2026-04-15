@@ -1,0 +1,15 @@
+# Large WordPress backup/site files
+public_html/
+public_html 2/
+*.zip
+
+# Local logs and retry artifacts
+*.log
+retry_seq*.log
+
+# OS/editor files
+.DS_Store
+~$*
+
+# Keep source CSV/workbook files intentional.
+# Do not ignore master_rewrite_workbook.csv because it is the main text workflow source.
